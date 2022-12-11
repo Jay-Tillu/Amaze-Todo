@@ -1,5 +1,6 @@
 import 'package:amaze_todo/firebase_options.dart';
 import 'package:amaze_todo/screens/login_screen.dart';
+import 'package:amaze_todo/screens/main_screen.dart';
 import 'package:amaze_todo/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -24,11 +25,15 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: SplashScreen.screenID,
-          page: (() => const SplashScreen()),
+          page: (() => SplashScreen()),
         ),
         GetPage(
           name: LoginScreen.screenId,
           page: (() => const LoginScreen()),
+        ),
+        GetPage(
+          name: MainScreen.screenID,
+          page: (() => const MainScreen()),
         )
       ],
     );
