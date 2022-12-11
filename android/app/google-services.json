@@ -29,6 +29,13 @@
             {
               "client_id": "759359185975-m7rt64ijqf9834ab1uudlml3hls9mdjn.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "759359185975-npr1ddqmihc7vklh2sbmne8cvjfag0sn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.amazeTodo"
+              }
             }
           ]
         }

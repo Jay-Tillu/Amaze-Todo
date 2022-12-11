@@ -2,6 +2,7 @@ import 'package:amaze_todo/utilities/constants.dart';
 import 'package:amaze_todo/utilities/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -35,7 +36,9 @@ class LoginScreen extends StatelessWidget {
                 height: SizeConfig.blockSizeVerticle * 8,
               ),
               FloatingActionButton.extended(
-                onPressed: () {},
+                onPressed: () async {
+                  GoogleSignIn().signIn();
+                },
                 extendedPadding: EdgeInsets.symmetric(
                   horizontal: SizeConfig.blockSizeHorizontal * 9,
                 ),

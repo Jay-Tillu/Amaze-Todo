@@ -7,8 +7,18 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Main Screen'),
+      body: SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            CircleAvatar(
+              backgroundImage: Image.network('').image,
+              radius: 100,
+            ),
+            const Text('Name'),
+            const Text('Email')
+          ],
+        ),
       ),
     );
   }
